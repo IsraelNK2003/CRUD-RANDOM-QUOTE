@@ -7,10 +7,14 @@ This images shows the code used to make quote applicaiton
 Below image shows the output of the quote application 
 <img width="1138" height="895" alt="image" src="https://github.com/user-attachments/assets/ab32625c-f3b4-49c8-b140-40781f1e825e" />
 Below is create account codes
-![alt text](image-1.png)
+<img width="1434" height="644" alt="image" src="https://github.com/user-attachments/assets/64a105ca-c9fe-46d3-9d1a-16b62f60b0ff" />
+
 Below is login codes
-![alt text](image.png)
+<img width="1584" height="647" alt="image" src="https://github.com/user-attachments/assets/ac17231f-392d-4826-a40b-ad98d8a88d8f" />
+
 Here is connection page with session
-![alt text](image-2.png)
+<img width="937" height="539" alt="image" src="https://github.com/user-attachments/assets/376d614c-2474-4ae3-83f0-fca23163f500" />
+
 here is logout page for restricting unauthorized users
-![alt text](image-3.png)
+<img width="1163" height="500" alt="image" src="https://github.com/user-attachments/assets/7fb4e2be-37a1-4c99-8cf1-3bc19710cb4f" />
+
