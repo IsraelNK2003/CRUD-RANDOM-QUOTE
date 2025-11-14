@@ -1,3 +1,4 @@
+<?php    include 'connection.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +7,12 @@
     <title>Quote Manager</title>
 </head>
 <body>
-    <h2>QUOTE MANAGER</h2>
+    <h2>QUOTE MANAGEMENT key <?php echo $_SESSION['my_session'];?></h2>
 
     <?php
     // Connect to database
-    $conn = mysqli_connect('localhost', 'root', '', 'random');
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
+ 
+
 
     // Add new message
     if (isset($_POST['add'])) {
@@ -57,13 +56,13 @@
     <form action="" method="POST">
         <textarea name="message" rows="4" cols="50" placeholder="Enter message..."><?php echo $edit_message; ?></textarea><br><br>
 
-        <?php if ($edit_mode): ?>
+        <?php if ($edit_mode){ ?>
             <input type="hidden" name="id" value="<?php echo $edit_id; ?>">
             <input type="submit" name="update" value="Update Message">
-            <a href="quotes.php">Cancel</a>
-        <?php else: ?>
+            <a href="quote.php">Cancel</a>
+        <?php }else{ ?>
             <input type="submit" name="add" value="Add Message">
-        <?php endif; ?>
+        <?php }; ?>
     </form>
 
     <hr>
@@ -108,10 +107,10 @@
         $random_message = $messages[array_rand($messages)];
         ?>
         <div style="background-color:black; color:white; padding:10px; width:50%; margin-top:20px;">
-            <h4>Random Message:</h4>
+            <h4>Today's Quote:</h4>
             <p><?php echo $random_message; ?></p>
         </div>
     <?php } ?>  
-
+    <a href="logout.php">logout</a>
 </body>
 </html>

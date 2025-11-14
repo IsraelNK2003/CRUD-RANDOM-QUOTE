@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2025 at 09:48 PM
+-- Generation Time: Nov 14, 2025 at 02:23 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -37,11 +37,31 @@ CREATE TABLE `quote` (
 --
 
 INSERT INTO `quote` (`id`, `message`) VALUES
-(1, ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Est rerum temporibus harum voluptate labor'),
-(3, 'yasezeranye kuduha'),
+(3, 'yasezeranye kuduha imvura yumugisha\r\n'),
 (4, 'Yesu niwe nshuti ihebuje'),
-(5, 'wamuragwa we ko uhunikira?'),
-(6, 'Ba maso udacumura');
+(9, 'Yesu niwe nshuti ihebuje cyane'),
+(11, 'Day without reading Bible is wasted day'),
+(13, 'Isabato nziza!\r\n');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(4) NOT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`) VALUES
+(1, 'israelnk001@gmail.com', '123'),
+(2, '24RP09782@stud.rp.ac.rw', '123');
 
 --
 -- Indexes for dumped tables
@@ -54,6 +74,12 @@ ALTER TABLE `quote`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -61,7 +87,13 @@ ALTER TABLE `quote`
 -- AUTO_INCREMENT for table `quote`
 --
 ALTER TABLE `quote`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
