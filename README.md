@@ -6,3 +6,11 @@ This images shows the code used to make quote applicaiton
 <img width="975" height="450" alt="image" src="https://github.com/user-attachments/assets/0d393dc0-5718-407b-8b27-0d0409612c3b" />
 Below image shows the output of the quote application 
 <img width="1138" height="895" alt="image" src="https://github.com/user-attachments/assets/ab32625c-f3b4-49c8-b140-40781f1e825e" />
+Below is create account codes
+![alt text](image-1.png)
+Below is login codes
+![alt text](image.png)
+Here is connection page with session
+![alt text](image-2.png)
+here is logout page for restricting unauthorized users
+![alt text](image-3.png)
