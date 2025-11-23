@@ -1,0 +1,90 @@
+body{
+  background-color: black;
+}
+.container{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: #fff;
+}
+
+.input input{
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+#signin{
+  background-color: #1E88E5;
+  color: #fff;
+  width: 34rem;
+}
+
+#login{
+  background-color: transparent;
+  border: 1px solid #ADA0A0;
+  color: #fff;
+  transition: 300ms;
+}
+
+#login:hover{
+  background-color: #1E88E5;
+}
+
+form .input{
+  margin-top: 2rem;
+}
+
+.form{
+  width: 40%;
+}
+
+.terms p{
+  color: #ADA0A0;
+  font-size: 13px;
+}
+
+.others a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.hr{
+  background-color: #fff;
+  width: 50%;
+  height: 1px;
+}
+
+.or{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 10px;
+}
+
+.or p{
+  color: #fff;
+}
+
+
+.social button{
+  background-color: #fff;
+  margin-top: 2rem;
+  padding: 1px 5px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  justify-content: center;
+}
